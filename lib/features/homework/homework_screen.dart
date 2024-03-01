@@ -76,7 +76,8 @@ class HomeworkScreen extends StatelessWidget {
                     } else if (index == undoneHomework.length + 1) {
                       if (doneHomework.isNotEmpty) {
                         return const Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: EdgeInsets.only(
+                              top: 32, right: 8, left: 8, bottom: 8),
                           child: Text(
                             'Completed Tasks',
                             style: TextStyle(
